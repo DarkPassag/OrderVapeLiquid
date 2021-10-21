@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <data>
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/liquidButton"
+            android:layout_width="0dp"
+            android:text="@string/liquid"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/side_button"
+            android:layout_marginEnd="@dimen/side_button"/>
+
+        <Button
+            android:id="@+id/vapeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/vape"
+            android:layout_marginTop="@dimen/side_button"
+            app:layout_constraintStart_toStartOf="@id/liquidButton"
+            app:layout_constraintEnd_toEndOf="@id/liquidButton"
+            app:layout_constraintTop_toBottomOf="@id/liquidButton"/>
+
+        <Button
+            android:id="@+id/accessoryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_button"
+            app:layout_constraintStart_toStartOf="@id/liquidButton"
+            app:layout_constraintEnd_toEndOf="@id/liquidButton"
+            android:text="@string/accessory"
+            app:layout_constraintTop_toBottomOf="@id/vapeButton"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+
+

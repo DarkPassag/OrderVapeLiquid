@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/fragmentStart">
+    <fragment
+        android:id="@+id/fragmentStart"
+        android:name="com.ch.ni.an.ordervapeliquid.screens.FragmentStart"
+        android:label="FragmentStart" >
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentChoose"
+            app:destination="@id/fragmentChoose" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChoose"
+        android:name="com.ch.ni.an.ordervapeliquid.screens.FragmentChoose"
+        android:label="FragmentChoose" >
+        <action
+            android:id="@+id/action_fragmentChoose_to_fragmentDelivery"
+            app:destination="@id/fragmentDelivery" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDelivery"
+        android:name="com.ch.ni.an.ordervapeliquid.screens.FragmentDelivery"
+        android:label="FragmentDelivery" >
+        <action
+            android:id="@+id/action_fragmentDelivery_to_fragmentDate"
+            app:destination="@id/fragmentDate" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDate"
+        android:name="com.ch.ni.an.ordervapeliquid.screens.FragmentDate"
+        android:label="FragmentDate" >
+        <action
+            android:id="@+id/action_fragmentDate_to_fragmentTotalCost"
+            app:destination="@id/fragmentTotalCost" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTotalCost"
+        android:name="com.ch.ni.an.ordervapeliquid.screens.FragmentTotalCost"
+        android:label="FragmentTotalCost" />
+</navigation>

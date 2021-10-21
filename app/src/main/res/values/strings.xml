@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OrderVapeLiquid</string>
+    <string name="liquid">Liquid</string>
+    <string name="vape">Vape</string>
+    <string name="accessory">Accessory</string>
+    <string name="Next">Continue</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="high_price">High price</string>
+    <string name="middle_price">Middle price</string>
+    <string name="low_price">Low price</string>
+    <string name="flavor">Flavor</string>
+    <string name="bakery">Bakery</string>
+    <string name="gum">Gum</string>
+    <string name="fruit">Fruits</string>
+    <string name="mech_mod">Mech mod</string>
+    <string name="vape_mod">Vape mod</string>
+</resources>
